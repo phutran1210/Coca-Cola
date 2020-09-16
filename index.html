@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's what<br /><span>I Like</span></h2>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quod quos totam vitae aliquam! Non obcaecati,
+          magnam odio porro repellendus adipisci, fugiat quaerat, quia nobis reprehenderit sit numquam placeat
+          temporibus.
+          <a href="#">View All Product</a>
+        </div>
+        <div class="imgBox">
+            <img src="./img/can-pepsi.png" alt="PesiDefault" class="pepsi">
+        </div>
+      </div>
+      <ul class="thumb">
+          <li><img src="./img/can-pepsi.png" alt="PesiDefault" onclick="imgSlider('./img/can-pepsi.png');changeBgColor('#0062be')"></li>
+          <li><img src="./img/Diet-Pepsi-v2_12oz.png" alt="PesiDefault" onclick="imgSlider('./img/Diet-Pepsi-v2_12oz.png');changeBgColor('#e60c2c')"></li>
+          <li><img src="./img/can-pepsi-zero-sugar.png" alt="PesiDefault" onclick="imgSlider('./img/can-pepsi-zero-sugar.png');changeBgColor('#1e1e1e')"></li>
+      </ul>
+      <ul class="sci">
+          <li><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="./img/twitter.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="./img/instagram.png" alt="facebook"></a></li>
+      </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const colorBg = document.querySelector('.sec')
+            colorBg.style.background = color;
+        }
+    </script>
+  </body>
+</html>
